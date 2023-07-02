@@ -25,12 +25,7 @@ class CurrencyExchangeServiceApplicationTests {
 
     @Container
     public static OracleContainer oracleContainer =
-            new OracleContainer("gvenzl/oracle-xe:18.4.0-slim")
-                    .withDatabaseName("testcontainer_db")
-                    .withUsername("testcontainer_user")
-                    .withPassword("password")
-                    .withExposedPorts(1521, 1521)
-            ;
+            new OracleContainer("gvenzl/oracle-xe:21-slim-faststart");
 
 
     @DynamicPropertySource
